@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  ul
+    each usuario, i in usuarios
+      li 
+        a(href="users/#{usuario.id}") Nome: #{usuario.nome}, idade: #{usuario.idade}
